@@ -211,64 +211,7 @@ background-color:var(--hero-button-color);
 }
 
 
-/* button portfolio */
-/* если несколько кнопок в строку display:flex */
-
-.portfolio-button{
-
-display: flex;
-justify-content: center;
-margin-bottom: 50px;
-}
-
-.portfolio-button .item:not(:last-child)
-{
-margin-right: 8px;
-}
-.button {
-display:inline-block;
-border-radius:4px;
-padding: 6px 22px;
-text-align: center;
-min-width: 73px;
-color: var(--title-text-color);
-background-color:var(--button-portfolio-color);
-font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-letter-spacing: 0.03em;
-text-decoration: none;
-border:none;
-/* border-color: var(--button-portfolio-color); */
-
-}
-
-.button.current{
-border:none;
-color: var(--primery-white-color);
-background-color: var(--accent-color);
-font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-letter-spacing: 0.03em;
-text-decoration: none;
-}
-
-.button.primary:hover, 
-.button.primary:focus {
-border:none;
-color: var(--primery-white-color);
-background-color: var(--accent-color);
-border-color: var(--button-portfolio-color);
-font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-letter-spacing: 0.03em;
-text-decoration: none;
-}
+/*падинги всех секций*/
 .section{
 padding: 94px 0px;
 }
@@ -359,8 +302,9 @@ margin-top: var(--card-set-gape);
 /* section-Team */
 
 /* контейнер TEAM */
-.section.team{
+.team-section{
 background-color:var(--button-portfolio-color);
+padding: 94px 0px;
 }
 
 .team {
@@ -400,6 +344,75 @@ padding: 30px 0px ;
 /* Макет Портфолио */
 
 /* контейнер portfolio */
+.filters-title{
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0px;
+padding: 0px;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
+
+/* button portfolio */
+
+.portfolio-button {
+
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+}
+
+.portfolio-button .item:not(:last-child) {
+margin-right: 8px;
+}
+
+.button {
+display: inline-block;
+border-radius: 4px;
+padding: 6px 22px;
+text-align: center;
+min-width: 73px;
+color: var(--title-text-color);
+background-color: var(--button-portfolio-color);
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+letter-spacing: 0.03em;
+text-decoration: none;
+border: none;
+
+}
+
+.button.current {
+border: none;
+color: var(--primery-white-color);
+background-color: var(--accent-color);
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+letter-spacing: 0.03em;
+text-decoration: none;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+border: none;
+color: var(--primery-white-color);
+background-color: var(--accent-color);
+border-color: var(--button-portfolio-color);
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+letter-spacing: 0.03em;
+text-decoration: none;
+}
 
 
 /* сетка для разметки 2 строки и более.. */
